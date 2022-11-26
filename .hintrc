@@ -1,0 +1,52 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "button-type": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "marquee": "off"
+      }
+    ],
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off",
+        "listitem": "off"
+      }
+    ]
+  }
+}

@@ -1,0 +1,485 @@
+/* //////CSS HEADER ////// */
+.header{
+
+    background: linear-gradient(to bottom, #0033cc 0%, #66ffff 100%);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 90px ;
+    width: 1600px;
+    /* padding-top: -20px; */
+    margin-left: -40px;
+    
+  }
+  .dropbtn1 {
+  
+  color: black;
+  
+  font-size: 25px;
+  margin-left:400px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  }
+  
+  .dropbtn1:hover {
+  color: #ccffff;
+  }
+  
+  .dropbtn {
+  color: black;
+  font-size: 25px;
+  margin-left:100px;
+  /* padding-top: 40px; */
+  font-weight: bold;
+  cursor: pointer;
+  
+  }
+  .dropbtn:hover {
+  color: #ccffff;
+  }
+  
+  .dropbtn3{
+  color: black;
+  font-size: 25px;
+  margin-left:100px;
+  /* padding-top: 25px; */
+  font-weight: bold;
+  cursor: pointer;
+  }
+  .dropbtn3:hover {
+  color: #ccffff;
+  }
+  
+  .dropbtn4{
+  color: black;
+  font-size: 25px;
+  margin-left:100px;
+
+  font-weight: bold;
+  cursor: pointer;
+  }
+  .dropbtn4:hover {
+  color: #ccffff;
+  }
+  
+  .dropdown {
+  display: inline-block;
+  position: relative;
+  
+  }
+  .dropdown-content {
+  position: absolute;
+  min-width: 200px;
+  display: none;
+  z-index: 1;
+  }
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+  .dropdown{
+    text-align: center;
+  }
+  
+  
+  .dropdown-content a:hover {
+  background: linear-gradient(to bottom, #006699 0%, #66ffff 100%);
+  border-radius: 20px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+  
+  background: linear-gradient(to bottom, #00ccff 0%, #66ffff 100%);
+  border-radius: 20px;
+  margin-left:100px;
+  display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+  background-color: grey;
+  }
+
+  body{
+    background-image: url("product1_images/webimages/blauses/Saree-Blouse-Back-Neck-Designs.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .first1{
+    font-size: 40px;
+    background-color: black;
+    opacity: 0.3;
+    color: #47f4f7;
+    height: 200px;
+    width: 600px;
+    text-align: center;
+    /* padding-top: 50px; */
+    margin-left: 400px;
+    margin-top: 250px;
+    border-radius: 25px;
+    
+  }
+
+  /* //////////////CSS OF BLAUSE MARQUE */
+  @charset "utf-8";
+
+html{
+    box-sizing: border-box;
+    height: 100;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.marque{
+  /* margin-top: 350px; */
+  background:linear-gradient(to bottom, #708090 0%, #ffffff 100%);
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.thmbnails{
+    display: flex;
+    flex-direction: column;
+    line-height:0;
+    list-style: none;
+}
+
+.thmnails li{
+    flex: auto;
+    list-style: none;
+   
+}
+
+.thmnails li a{
+   display: block;
+   height: 30vmin;
+   overflow: hidden;
+
+}
+
+.thmbnails img{
+    width: 30vmin;
+    height: 20vmin;
+    overflow: hidden;
+}
+
+.text10{
+  font-size: 50px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  margin-top: 350px;
+  background:linear-gradient(to bottom, #708090 0%, #ffffff 100%);
+  height: 100px;
+}
+
+.thmbnails1{
+    display: flex;
+    flex-direction: row;
+    line-height:0;
+}
+
+.thmbnails1 li{
+    flex: auto;
+    list-style: none;
+}
+
+.thmbnails1 li a{
+   display: block;
+   height: 20vmin;
+   width: 20vmin;
+   overflow: hidden;
+   padding-top: -100px;
+  
+}
+
+.thmbnails1 img{
+    width: 20vmin;
+    height: 20vmin;
+    overflow: hidden;
+}
+.slides{
+overflow: hidden;
+    width: 70vmin;
+    height: 100vmin;
+}
+
+ul .slides li{
+    width: 30vmin;
+    height: 30vmin;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+
+}
+
+.slides img{
+    height: 100vmin;
+    object-fit: cover;
+    object-position: top;
+}
+
+.slides li :target{
+    z-index: 3;
+    -webkit-animation: slide 1s 1;;
+}
+
+@keyframes slides{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+@keyframes hidden{
+    0%{
+        z-index: 2;
+    }
+
+    100%{
+        z-index: 2;
+    }
+}
+
+/* ////////CSS OF SERVIECES TEXT */
+.services{
+  font-size: 50px;
+  text-align: center;
+  height: 150px;
+  background-color: grey;
+}
+
+.services-text{
+  font-size: 20px;
+  text-align: center;
+
+}
+
+/* ///////////CSS OF FLIP-CARDS */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: linear-gradient(to bottom, #708090 0%, #ffffff 100%);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: linear-gradient(to bottom, #003366 0%, #ffffff 100%);
+  color: navy;
+  transform: rotateY(180deg);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-template-rows: 100px 300px; */
+  grid-gap: 10px;
+  height: 1000px;
+  background-color: grey;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+button{height: 50px;
+width: 250px;
+border-radius: 50px;
+font-size: 20px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+box-shadow: 5px 5px 30px 10px navy inset;
+border: none;
+
+}
+
+a{
+  color: #ffffff;
+text-decoration: none;
+}
+
+/* /////////////CSS OF FOOOTER ///////////*/
+
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background-image: url("product1_images/webimages/blauses/machine1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 10vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+    font-size: 20px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 50px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+
+ .area{
+
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  background-image: url("product1_images/webimages/blauses/stitching.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  margin-left: 800px;
+  height: 400px;
+  width: 600px;
+}
+
+
+
+
+.detail{
+    border: 2px solid black;
+    height: 150px;
+    width: 350px;
+    border-radius: 25px;
+    margin-left: 120px;
+    box-shadow:5px 5px 30px 10px rgb(220, 220, 247) inset; ;
+
+}
+
+.detail2{
+    margin-left: 80px;
+    font-size: 20px;
+    color: #ccc;
+}
+.detail1{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ccc;
+}
+
